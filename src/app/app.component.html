@@ -1,6 +1,17 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <mat-card class="bg-primary">Debt Angel</mat-card>
+
+  <!--Navbar-->
+  <mat-card class="text-white">
+    <a class="text-white" [routerLink]="[ '' ]">Debt Angel</a> &nbsp;&nbsp;
+    <a class="text-white" [routerLink]="[ '' ]">Home</a> &nbsp;&nbsp;
+    <a class="text-white" [routerLink]="[ '' ]">About Us</a> &nbsp;&nbsp;
+  </mat-card>
+
 </div>
 
 <router-outlet></router-outlet>
+
+<div class="footer text-align:center">
+  <mat-card class="text-white text-center">Terms and Conditions</mat-card>
+</div>
