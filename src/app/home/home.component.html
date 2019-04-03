@@ -1,5 +1,40 @@
 <div class="container">
-  <div class="row">
+  <br>
+  <br>
+
+  <h4 class="text-center">A warm Welcome to Debt Angel</h4>
+  <h6 class="text-center">Your friend in a time of need.</h6>
+  <hr>
+
+  <br>
+  <h6 class="text-center">We can help you in just 3 easy steps:</h6>
+
+  <mat-horizontal-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <ng-template matStepLabel>STEP 1</ng-template>
+      <h1>1</h1>
+    </mat-step>
+
+    <mat-step [stepControl]="secondFormGroup">
+      <ng-template matStepLabel>STEP 2</ng-template>
+      <h1>2</h1>
+    </mat-step>
+
+    <mat-step>
+      <ng-template matStepLabel>STEP 3</ng-template>
+      <h1>3</h1>
+    </mat-step>
+  </mat-horizontal-stepper>
+
+  <div class="mt-4"></div>
+  <div class="mt-4"></div>
+
+  <!--Application Form-->
+  <button mat-raised-button color="primary" class="btn btn-block" (click)="toggleApplicatiionForm()">
+    Sign Me Up!
+  </button>
+
+  <div class="row" *ngIf="isViewApplicationForm">
     <div class="col-2"></div>
 
     <div class="col-8">
@@ -9,61 +44,73 @@
         <mat-form-field appearance="outline">
           <mat-label>First Name</mat-label>
           <input matInput placeholder="FirstName">
-          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
           <mat-hint>First name on your ID</mat-hint>
         </mat-form-field>
-        <br>
-
-        <div class="example-container">
-            <mat-form-field appearance="outline">
-              <mat-label>Middle Name</mat-label>
-              <input matInput placeholder="MiddleName">
-              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-              <mat-hint>Second name on your ID. This is optional.</mat-hint>
-            </mat-form-field>
-            <br>
-
-            <div class="example-container">
-                <mat-form-field appearance="outline">
-                  <mat-label>Last Name</mat-label>
-                  <input matInput placeholder="Last Name">
-                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                  <mat-hint>Last name on your ID (Surname).</mat-hint>
-                </mat-form-field>
-                <br>
-
-                <div class="example-container">
-                    <mat-form-field appearance="outline">
-                      <mat-label>Email</mat-label>
-                      <input matInput placeholder="Email">
-                      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                      <mat-hint>Email.</mat-hint>
-                    </mat-form-field>
-                    <br>
-
-                    <mat-form-field>
-                        <mat-select placeholder="Select me">
-                          <mat-option value="option">Option</mat-option>
-                        </mat-select>
-                        <mat-hint align="end">Here's the dropdown arrow ^</mat-hint>
-                      </mat-form-field>
-      
-        <mat-form-field>
-          <textarea matInput placeholder="Additional Information"></textarea>
-        </mat-form-field>
-        <br>
-      
-        <mat-form-field>
-          <mat-select placeholder="Select">
-            <mat-option value="option">Option</mat-option>
-          </mat-select>
-        </mat-form-field>
-        <br>
-
       </div>
+      <br>
+
+      <div class="example-container">
+        <mat-form-field appearance="outline">
+          <mat-label>Middle Name</mat-label>
+          <input matInput placeholder="MiddleName">
+          <mat-hint>Second name on your ID. This is optional.</mat-hint>
+        </mat-form-field>
+      </div>
+      <br>
+
+      <div class="example-container">
+        <mat-form-field appearance="outline">
+          <mat-label>Last Name</mat-label>
+          <input matInput placeholder="Last Name">
+          <mat-hint>Last name on your ID (Surname).</mat-hint>
+        </mat-form-field>
+      </div>
+      <br>
+
+      <div class="example-container">
+        <mat-form-field appearance="outline">
+          <mat-label>Phone Number</mat-label>
+          <input matInput placeholder="Phone Number">
+          <mat-icon matSuffix>call</mat-icon>
+          <mat-hint>Phone number.</mat-hint>
+        </mat-form-field>
+      </div>
+      <br>
+
+      <div class="example-container">
+        <mat-form-field appearance="outline">
+          <mat-label>Alternative Phone Number</mat-label>
+          <input matInput placeholder="Alternative Phone Number">
+          <mat-icon matSuffix>call</mat-icon>
+          <mat-hint>Alternative Phone Number incase we don't reach you on your primary phone.</mat-hint>
+        </mat-form-field>
+      </div>
+      <br>
+
+      <div class="example-container">
+        <mat-form-field appearance="outline">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Email">
+          <mat-icon matSuffix>email</mat-icon>
+          <mat-hint>Email.</mat-hint>
+        </mat-form-field>
+      </div>
+      <br>
+
+      <form class="example-container">
+        <mat-form-field class="example-full-width">
+          <input type="text" placeholder="Prefered Method of Communication (How you want to be contacted)"
+            aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of options" [value]="option">
+              {{option}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </form><br>
+
     </div>
 
     <div class="col-2"></div>
   </div>
 </div>
-
