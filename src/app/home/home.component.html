@@ -1,15 +1,16 @@
 <div class="container">
   <br>
   <h1 class="mat-h1 text-center bold">Welcome to Debt Angel</h1>
-  <h3 class="text-center mat-h3 bold">Your discreet, reliable and trusted debt solutions provider.</h3>
-
+   <h3 class="text-center mat-h3 bold">Your professional, reliable and trusted debt solutions provider.</h3>
   <div class="mt-4"></div>
   <div class="mt-4"></div>
+  <br>
 
   <mat-card>
     <div class="row">
       <div class="container header-box text-center">
-        <h2 class="mat-h2">Our Services</h2>
+        <h1 class="mat-h1 text-center bold">Our Services</h1>
+        <hr>
       </div>
     </div>
 
@@ -34,34 +35,45 @@
   </mat-card>
 
   <div class="mt-4"></div>
+  <div class="mt-4"></div>
 
-  <br>
-  <h2 class="text-center mat-h2">Our 3 steps process:</h2>
+  <br><br>
+  <h1 class="mat-h1 text-center bold">Our 3 Step Process</h1>
 
   <mat-horizontal-stepper [linear]="isLinear" #stepper>
     <mat-step [stepControl]="firstFormGroup">
+      <div class="mt-4"></div>
       <ng-template matStepLabel>STEP 1</ng-template>
-      <h4 class="debt-solution-header">1. Debt Analysis</h4>
-      <p class="">Debt Angels will give you a Quick and Free Analysis of your Debt Situation</p>
+      <h2 class="mat-h2">
+        1. Debt Analysis
+        <mat-icon matSuffix>assessment</mat-icon>
+      </h2>
+      <h3 class="mat-h3">Debt Angels will give you a Quick and Free Analysis of your Debt Situation.</h3>
     </mat-step>
 
     <mat-step [stepControl]="secondFormGroup">
+      <div class="mt-4"></div>
       <ng-template matStepLabel>STEP 2</ng-template>
-      <h4 class="debt-solution-header">2. Debt Restructure</h4>
-      <p class="">Next Step is to Restructure and Negotiate a Lower Monthly Payment for you</p>
+      <h2 class="mat-h2">
+        2. Debt Restructuring
+        <mat-icon matSuffix>swap_vert</mat-icon>
+      </h2><span>
+
+      </span>
+      <h3 class="mat-h3">Next Step is to Restructure and Negotiate a Lower Monthly Payment for you.</h3>
     </mat-step>
 
     <mat-step>
+      <div class="mt-4"></div>
       <ng-template matStepLabel>STEP 3</ng-template>
-      <h4 class="debt-solution-header">3. Debt Free</h4>
-      <p class="">Sticking to your new payment plan will get you out of debt before you know it..</p>
+      <h2 class="mat-h2">
+        3. Debt Free
+        <mat-icon matSuffix>done_all</mat-icon>
+      </h2>
+      <h3 class="mat-h3">Sticking to your new payment plan will get you out of debt before you know it..</h3>
     </mat-step>
   </mat-horizontal-stepper>
 
-  <div class="mt-4"></div>
-  <div class="mt-4"></div>
-  <div class="mt-4"></div>
-  
   <button mat-raised-button color="primary" class="btn btn-block" (click)="onApplication()">
     Apply for Debt Solution
   </button>

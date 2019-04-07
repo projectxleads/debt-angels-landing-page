@@ -3,16 +3,24 @@
 
   <!--Navbar-->
   <mat-card class="text-white">
-    <a class="text-white" [routerLink]="[ '' ]"><h3 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Debt Angel</h3></a> &nbsp;&nbsp;
-    <a class="text-white" [routerLink]="[ '' ]"> Home </a> &nbsp;&nbsp;
-    <a class="text-white" [routerLink]="[ 'application' ]"> Apply for Debt Solution </a> &nbsp;&nbsp;
-    <a class="text-white" [routerLink]="[ 'about' ]"> About Us </a> &nbsp;&nbsp;
+    <a class="text-white" [routerLink]="[ '' ]">
+      <h3 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Debt Angel</h3>
+    </a>
+    <mat-card class="text-white">
+      &nbsp;&nbsp;
+      <a class="text-white" [routerLink]="[ '' ]"> Home |</a> &nbsp;&nbsp;
+      <a class="text-white" [routerLink]="[ 'application' ]"> Apply for Debt Solution |</a> &nbsp;&nbsp;
+      <a class="text-white" [routerLink]="[ 'terms-and-conditions' ]"> Terms and Conditions |</a> &nbsp;&nbsp;
+      <a class="text-white" [routerLink]="[ 'about' ]"> About Us </a> &nbsp;&nbsp;
+    </mat-card>
+    <br>
   </mat-card>
-
 </div>
 
-<div class="footer text-align:center">
-  <mat-card class="text-white text-center">Terms and Conditions</mat-card>
-</div>
+<!-- <div class="footer text-align:center">
+  <mat-card class="text-white text-center">
+    <a href="#" class="mat-h3 bold text-white">Terms and Conditions</a>
+  </mat-card>
+</div> -->
 
 <router-outlet></router-outlet>
