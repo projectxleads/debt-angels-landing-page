@@ -12,26 +12,33 @@
     <div class="row">
       <div class="container header-box text-center">
         <h1 class="mat-h1 text-center">Our Services</h1>
-        <hr>
       </div>
     </div>
 
     <div class="row text-center">
       <div class="col-md-3">
-        <h3 class="mat-h3 bold">Debt</h3>
-        <p class="">We will help you get out of debt</p>
+        <h3 class="mat-h3 bold">
+          <u>Debt</u>
+        </h3>
+        <p>We will help you get out of debt</p>
       </div>
       <div class="col-md-3">
-        <h3 class="mat-h3">Payment</h3>
-        <p class="">Lower monthly payments, and quick results</p>
+        <h3 class="mat-h3">
+          <u>Payment</u>
+        </h3>
+        <p>Lower monthly payments, and quick results</p>
       </div>
       <div class="col-md-3">
-        <h3 class="mat-h3">Security</h3>
-        <p class="">You'll be legally protected against creditors</p>
+        <h3 class="mat-h3">
+          <u>Security</u>
+        </h3>
+        <p>You'll be legally protected against creditors</p>
       </div>
       <div class="col-md-3">
-        <h3 class="mat-h3">Negotiation</h3>
-        <p class="">Our consultants negotiates on your behalf</p>
+        <h3 class="mat-h3">
+          <u>Negotiation</u>
+        </h3>
+        <p>Our consultants negotiates on your behalf</p>
       </div>
     </div>
   </mat-card>
@@ -40,40 +47,41 @@
   <div class="mt-4"></div>
 
   <br><br>
+
   <mat-card>
-    <h1 class="mat-h1 text-center">Our 3 Step Process</h1>
-    <hr>
-    <mat-horizontal-stepper [linear]="isLinear" #stepper>
-      <mat-step [stepControl]="firstFormGroup" class="text-center">
-        <div class="mt-4"></div>
-        <ng-template matStepLabel>STEP 1</ng-template>
-        <h2 class="mat-h2">
-          1. Debt Analysis
-          <mat-icon matSuffix>assessment</mat-icon>
-        </h2>
-        <h3 class="mat-h3">Debt Angels will give you a Quick and Free Analysis of your Debt Situation.</h3>
-      </mat-step>
+    <div class="row">
+      <div class="container header-box text-center">
+        <h1 class="mat-h1 text-center">Our Process</h1>
+      </div>
+    </div>
 
-      <mat-step [stepControl]="secondFormGroup" class="text-center">
-        <div class="mt-4"></div>
-        <ng-template matStepLabel>STEP 2</ng-template>
-        <h2 class="mat-h2">
-          2. Debt Restructuring
-          <mat-icon matSuffix>swap_vert</mat-icon>
-        </h2>
-        <h3 class="mat-h3">Next Step is to Restructure and Negotiate a Lower Monthly Payment for you.</h3>
-      </mat-step>
+    <div class="row text-center">
+      <div class="col-md-3">
+        <mat-icon matSuffix>assessment</mat-icon>
+        <br>
+        <h3 class="mat-h3">
+          <u>1. Debt Analysis</u>
+        </h3>
+        <p>Debt Angels will give you a Quick and Free Analysis of your Debt Situation.</p>
+      </div>
+      <div class="col-md-4">
+        <mat-icon matSuffix>swap_vert</mat-icon>
+        <br>
 
-      <mat-step [stepControl]="thirdFormGroup" class="text-center">
-        <div class="mt-4"></div>
-        <ng-template matStepLabel>STEP 3</ng-template>
-        <h2 class="mat-h2">
-          3. Debt Free
-          <mat-icon matSuffix>done_all</mat-icon>
-        </h2>
-        <h3 class="mat-h3">Sticking to your new payment plan will get you out of debt before you know it..</h3>
-      </mat-step>
-    </mat-horizontal-stepper>
+        <h3 class="mat-h3">
+          <u>2. Debt Restructuring</u>
+        </h3>
+        <p>Next Step is to Restructure and Negotiate a Lower Monthly Payment for you.</p>
+      </div>
+      <div class="col-md-4">
+        <mat-icon matSuffix>done_all</mat-icon>
+        <br>
+        <h3 class="mat-h3">
+          <u>3. Debt Free</u>
+        </h3>
+        <p class="mat-p">Sticking to your new payment plan will get you out of debt before you know it..</p>
+      </div>
+    </div>
   </mat-card>
   <br>
 
