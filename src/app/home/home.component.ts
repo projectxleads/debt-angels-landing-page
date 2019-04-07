@@ -11,6 +11,8 @@ export class HomeComponent implements OnInit {
   private myControl = new FormControl();
   private options: string[] = ['Call', 'SMS', 'WhatsApp', 'Email'];
 
+  panelOpenState = false;
+  
   constructor() { }
 
   ngOnInit() {

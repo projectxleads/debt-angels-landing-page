@@ -19,3 +19,8 @@
 .example-full-width {
     width: 100%;
 }
+
+/*Material*/
+.mat-card-blue {
+    background-color: #3f51b5;
+}
