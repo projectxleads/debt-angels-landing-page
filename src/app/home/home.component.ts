@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,22 +8,14 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  private isViewApplicationForm: boolean = false;
-  private myControl = new FormControl();
-  private options: string[] = ['Call', 'SMS', 'WhatsApp', 'Email'];
-
   panelOpenState = false;
   
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
-  private toggleApplicatiionForm(): void {
-    if (this.isViewApplicationForm) {
-      this.isViewApplicationForm = false;
-    } else {
-      this.isViewApplicationForm = true;
-    }
+  public onApplication(): void {
+   this.router.navigate(['application']);
   }
 }
