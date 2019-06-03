@@ -9,7 +9,12 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   panelOpenState = false;
-  
+
+  private isViewApplicationForm: boolean = false;
+  private myControl = new FormControl();
+  private options: string[] = ['Call', 'SMS', 'WhatsApp', 'Email'];
+
+
   constructor(private router: Router) { }
 
   ngOnInit() {
