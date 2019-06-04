@@ -1,6 +1,6 @@
-<div class="d-md-flex h-md-100 align-items-center">
+<div class="d-md-flex">
   <!-- First Half -->
-  <div id="landing-div" class="col-md-6 p-0 h-md-100">
+  <div id="landing-div" class="col-md-6 p-0">
     <div class="d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
       <div class="logoarea pt-5 pb-5">
         <h1 class="text-center" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Debt
@@ -12,11 +12,11 @@
   </div>
 
   <!-- Second Half -->
-  <div class="col-md-6 p-0 bg-white h-md-100 loginarea">
-    <div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center">
+  <div class="col-md-6 p-0 bg-white loginarea">
+    <div class="d-md-flex justify-content-center">
 
       <div class="col-sm-8">
-        <div class="example-container align-content-center form-inline justify-content-center"
+        <div class="example-container form-inline justify-content-center"
           [formGroup]="registrationFormGroup" autocomplete="off">
 
           <br><br><br>
@@ -102,86 +102,127 @@
   </div>
 </div>
 
-<div class="d-md-flex h-md-100">
+<div class="d-md-flex">
   <!-- Third Half -->
-  <div class="col-md-6 p-0 bg-white h-md-100 loginarea">
-    <div class="d-md-flex h-md-100 p-5 justify-content-center">
-
+  <div class="col-md-6 p-0 bg-white loginarea">
+    <div class="d-md-flex p-5 justify-content-center">
       <div class="container-fluid">
+        <h1 class="text-center">What is Debt Counselling</h1>
         <div class="row">
-          <div class="col-sm d-flex">
-            <div class="card card-body  flex-fill">
-              <h2 class="mat-h2 text-center">1. What is Debt Counselling</h2>
-              <h4 class="mat-h4">
-                Are you over indebted? Struggling to pay off your loans and meeting your monthly obligations?
-                Debt counselling is one of the debt relief measures available in South Africa, introduced by the
-                National Credit Act (NCA) in 2007. Debt counselling is intended to assist over-indebted consumers
-                struggling with debt through budget advice, negotiation with credit providers for reduced payments and
-                restructuring of debts.
-                This is a great process for anyone with an income and struggling to meet their monthly obligations.
-              </h4>
-            </div>
-          </div>
-          <div class="col-sm d-flex">
-            <div class="card card-body flex-fill">
-              <h2 class="mat-h2 text-center">2. What is over-indebtedness?</h2>
-              <h4 class="mat-h4">
-                Over-indebtedness occurs when a consumer is unable to repay all financial obligations in a timely manner
-                and/or where total debt repayments exceed net income (“take-home pay”) after living expenses have been
-                paid for.
-              </h4>
-            </div>
-          </div>
-          <div class="col-sm d-flex">
-            <div class="card card-body flex-fill">
-              <h2 class="mat-h2 text-center">3. How does Debt counselling work?</h2>
-              <h4 class="mat-h4">
-                Once declared over indebted and accepted into debt counselling the following will happen:
-                You will be protected from legal action for a period of 60 days from the day of application and after
-                the arrangement has been concluded, as long as you pay according to the new arrangement;
-                All your creditors will have to stop calling you and will liaise with your debt counsellor;
-                You will be listed with the Credit Bureau as being under debt counselling.
-              </h4>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-2">
-          <div class="col-sm d-flex">
-            <div class="card card-body flex-fill">
-              <h2 class="mat-h2 text-center">4. How can Debt counselling help you become debt free?</h2>
-              <h4 class="mat-h4">
-                Once declared over indebted and accepted into debt counselling the following will happen:
-                You will be protected from legal action for a period of 60 days from the day of application and after
-                the arrangement has been concluded, as long as you pay according to the new arrangement;
-                All your creditors will have to stop calling you and will liaise with your debt counsellor;
-                You will be listed with the Credit Bureau as being under debt counselling.
-              </h4>
-            </div>
-          </div>
-          <div class="col-sm d-flex">
-            <div class="card card-body flex-fill">
-              <h2 class="mat-h2 text-center">5. How can Debt counselling help you become debt free?</h2>
-              <h4 class="mat-h4">
-                While you are under debt counselling you will not be allowed to get any further credit until you are
-                issued with a Clearance Certificate- once you have satisfied your obligations as per the Court or
-                Tribunal order and in line with the National Credit Act.
-              </h4>
-            </div>
-          </div>
-          <div class="col-sm d-flex">
-            <div class="card card-body flex-fill">
-              <h2 class="mat-h2 text-center">6. Who is in charge of debt counselling in South Africa?</h2>
-              <h4 class="mat-h4">
-                Debt counselling is governed by the National Credit Act and is overseen by the National Credit Regulator
-                (NCR)
-              </h4>
+          <div class="col-sm">
+            <div>
+              <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                <ngb-panel title="1. Are you over indebted? Struggling to pay off your loans and meeting your monthly obligations?">
+                  <ng-template ngbPanelContent>
+                    Debt counselling is one of the debt relief measures available in South Africa, introduced by the
+                    National Credit Act (NCA) in 2007. Debt counselling is intended to assist over-indebted consumers
+                    struggling with debt through budget advice, negotiation with credit providers for reduced payments
+                    and
+                    restructuring of debts.
+                    This is a great process for anyone with an income and struggling to meet their monthly obligations.
+                  </ng-template>
+                </ngb-panel>
+                <ngb-panel title="2. What is over-indebtedness?">
+                  <ng-template ngbPanelContent>
+                    Over-indebtedness occurs when a consumer is unable to repay all financial obligations in a timely
+                    manner
+                    and/or where total debt repayments exceed net income (“take-home pay”) after living expenses have
+                    been
+                    paid for.
+                  </ng-template>
+                </ngb-panel>
+                <ngb-panel title="3. How does Debt counselling work?">
+                  <ng-template ngbPanelContent>
+                    Once declared over indebted and accepted into debt counselling the following will happen:
+                    You will be protected from legal action for a period of 60 days from the day of application and
+                    after
+                    the arrangement has been concluded, as long as you pay according to the new arrangement;
+                    All your creditors will have to stop calling you and will liaise with your debt counsellor;
+                    You will be listed with the Credit Bureau as being under debt counselling.
+                  </ng-template>
+                </ngb-panel>
+                <ngb-panel title="4. How can Debt counselling help you become debt free?">
+                  <ng-template ngbPanelContent>
+                    Once declared over indebted and accepted into debt counselling the following will happen:
+                    You will be protected from legal action for a period of 60 days from the day of application and
+                    after
+                    the arrangement has been concluded, as long as you pay according to the new arrangement;
+                    All your creditors will have to stop calling you and will liaise with your debt counsellor;
+                    You will be listed with the Credit Bureau as being under debt counselling.
+                  </ng-template>
+                </ngb-panel>
+                <ngb-panel title="5. How can Debt counselling help you become debt free?">
+                  <ng-template ngbPanelContent>
+                    While you are under debt counselling you will not be allowed to get any further credit until you are
+                    issued with a Clearance Certificate- once you have satisfied your obligations as per the Court or
+                    Tribunal order and in line with the National Credit Act.
+                  </ng-template>
+                </ngb-panel>
+                <ngb-panel title="6. Who is in charge of debt counselling in South Africa?">
+                  <ng-template ngbPanelContent>
+                    Debt counselling is governed by the National Credit Act and is overseen by the National Credit
+                    Regulator
+                    (NCR)
+                  </ng-template>
+                </ngb-panel>
+                <ngb-panel title="7. Who offers debt counselling in South Africa?">
+                    <ng-template ngbPanelContent>
+                      There are multiple companies or people that are registered as Debt counsellors in terms of the
+                      National
+                      Credit Act.
+                    </ng-template>
+                  </ngb-panel>
+                  <ngb-panel title="8. Where and how should the money be paid?">
+                    <ng-template ngbPanelContent>
+                      You would arrange that your first and second payment to be taken by your debt counsellor, by means
+                      of a
+                      debit order.
+                    </ng-template>
+                  </ngb-panel>
+                  <ngb-panel title="9. Who is responsible for payment distributions to credit providers?">
+                    <ng-template ngbPanelContent>
+                      Once accepted under debt counselling you will pay one instalment which will then be distributed to
+                      your
+                      credit providers by a Payment Distribution Agent (PDA). The PDA is also responsible for the
+                      provision of
+                      monthly statements to consumers and payment schedules to debt counsellors, employers and credit
+                      providers, as well as attending to queries from the respective parties
+                    </ng-template>
+                  </ngb-panel>
+                  <ngb-panel title="10. How can Debt counselling help you become debt free?">
+                    <ng-template ngbPanelContent>
+                      Our Debt Review Advice Will Put You Back in Control of Your Finances.
+                      We provide tailor-made Debt Review Services across South Africa and can help you save money every
+                      month
+                      and protect your assets from being repossessed.
+                      Through poor financial decision-making or even via no fault of their own, most consumers have lived
+                      through the predicament of running out of money before month end, skipping debt repayments to credit
+                      providers as a result.
+                      The Debt Review Process prevents credit providers from taking legal action against you in order to
+                      reclaim the outstanding balance. With our Debt Review Help, you will avoid setting off a grim
+                      sequence
+                      of ramifications.
+                    </ng-template>
+                  </ngb-panel>
+                  <ngb-panel title="11. Blacklisting">
+                    <ng-template ngbPanelContent>
+                      Debt Review Loans can protect you from a bad credit rating, which can undermine your opportunities.
+                    </ng-template>
+                  </ngb-panel>
+                  <ngb-panel title="12. Garnishee Orders?">
+                    <ng-template ngbPanelContent>
+                      Whether you live in Bellville, Bloemfontein, Pretoria or Cape Town, Debt Review can protect you from
+                      Garnishee Orders. These orders force your employers to pay your credit providers directly out of
+                      your
+                      monthly salary.
+                    </ng-template>
+                  </ngb-panel>
+              </ngb-accordion>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </div>
 
   <!-- Fourth Half -->
@@ -189,80 +230,18 @@
     <div class="d-md-flex h-md-100 p-5 justify-content-center">
 
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm d-flex">
-            <div class="card card-body  flex-fill">
-              <h2 class="mat-h2 text-center">7. Who offers debt counselling in South Africa?</h2>
-              <h4 class="mat-h4">
-                There are multiple companies or people that are registered as Debt counsellors in terms of the National
-                Credit Act.
-              </h4>
-            </div>
-          </div>
-          <div class="col-sm d-flex">
-            <div class="card card-body flex-fill">
-              <h2 class="mat-h2 text-center">8. Where and how should the money be paid?</h2>
-              <h4 class="mat-h4">
-                You would arrange that your first and second payment to be taken by your debt counsellor, by means of a
-                debit order.
-              </h4>
-            </div>
-          </div>
-          <div class="col-sm d-flex">
-            <div class="card card-body flex-fill">
-              <h2 class="mat-h2 text-center">9. Who is responsible for payment distributions to credit providers?</h2>
-              <h4 class="mat-h4">
-                Once accepted under debt counselling you will pay one instalment which will then be distributed to your
-                credit providers by a Payment Distribution Agent (PDA). The PDA is also responsible for the provision of
-                monthly statements to consumers and payment schedules to debt counsellors, employers and credit
-                providers, as well as attending to queries from the respective parties
-              </h4>
-            </div>
-          </div>
-        </div>
 
-        <div class="row mt-2">
-          <div class="col-sm d-flex">
-            <div class="card card-body flex-fill">
-              <h2 class="mat-h2 text-center">10. How can Debt counselling help you become debt free?</h2>
-              <h4 class="mat-h4">
-                Our Debt Review Advice Will Put You Back in Control of Your Finances.
-                We provide tailor-made Debt Review Services across South Africa and can help you save money every month
-                and protect your assets from being repossessed.
-                Through poor financial decision-making or even via no fault of their own, most consumers have lived
-                through the predicament of running out of money before month end, skipping debt repayments to credit
-                providers as a result.
-                The Debt Review Process prevents credit providers from taking legal action against you in order to
-                reclaim the outstanding balance. With our Debt Review Help, you will avoid setting off a grim sequence
-                of ramifications.
 
-              </h4>
-            </div>
-          </div>
-          <div class="col-sm d-flex">
-            <div class="card card-body flex-fill">
-              <h2 class="mat-h2 text-center">11. Blacklisting</h2>
-              <h4 class="mat-h4">
-                Debt Review Loans can protect you from a bad credit rating, which can undermine your opportunities.
-              </h4>
-            </div>
-          </div>
-          <div class="col-sm d-flex">
-            <div class="card card-body flex-fill">
-              <h2 class="mat-h2 text-center">12. Garnishee Orders</h2>
-              <h4 class="mat-h4">
-                Whether you live in Bellville, Bloemfontein, Pretoria or Cape Town, Debt Review can protect you from
-                Garnishee Orders. These orders force your employers to pay your credit providers directly out of your
-                monthly salary.
-              </h4>
-            </div>
-          </div>
-        </div>
+
       </div>
 
     </div>
   </div>
 </div>
+
+
+
+
 
 <div class="d-md-flex h-md-100">
   <!-- Fifth Half -->
@@ -348,87 +327,16 @@
   <!-- Sixth Half -->
   <div class="col-md-6 p-0 bg-white h-md-100 loginarea">
     <div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
+            <div>
+              <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                
 
-      <div class="col-sm-8">
-        <div class="example-container align-content-center form-inline justify-content-center"
-          [formGroup]="registrationFormGroup" autocomplete="off">
-
-          <br><br><br>
-          <h1 class="mat-h1 text-center">Apply for debt solution</h1>
-
-          <mat-form-field appearance="outline">
-            <mat-label>First Name</mat-label>
-            <input matInput placeholder="FirstName" class="text-center" formControlName="firstName">
-            <mat-hint>First name on your ID</mat-hint>
-            <mat-error *ngIf="hasError('firstName', 'required')">Firstname is required.</mat-error>
-          </mat-form-field>
-          <br>
-
-          <mat-form-field appearance="outline">
-            <mat-label>Middle Name</mat-label>
-            <input matInput placeholder="MiddleName" class="text-center" formControlName="middleName">
-            <mat-hint>Second name on your ID. This is optional.</mat-hint>
-          </mat-form-field>
-          <br>
-
-          <mat-form-field appearance="outline">
-            <mat-label>Last Name</mat-label>
-            <input matInput placeholder="Last Name" class="text-center" formControlName="lastName">
-            <mat-hint>Last Name.</mat-hint>
-            <mat-error *ngIf="hasError('lastName', 'required')">Lastname is required.</mat-error>
-          </mat-form-field>
-          <br>
-
-          <mat-form-field appearance="outline">
-            <mat-label>Phone Number</mat-label>
-            <input matInput placeholder="Phone Number" class="text-center" formControlName="phoneNumber">
-            <mat-hint>Phone number.</mat-hint>
-            <mat-error *ngIf="hasError('phoneNumber', 'required')">Phonenumber is required.</mat-error>
-          </mat-form-field>
-          <br>
-
-          <mat-form-field appearance="outline">
-            <mat-label>Alternative Phone Number</mat-label>
-            <input matInput placeholder="Alternative Phone Number" class="text-center"
-              formControlName="alternativePhoneNumber">
-            <mat-hint>Alternative Phone Number incase we don't reach you on your primary phone.</mat-hint>
-          </mat-form-field>
-          <br>
-
-          <mat-form-field appearance="outline">
-            <mat-label>Email</mat-label>
-            <input matInput placeholder="Email" class="text-center" formControlName="email">
-            <mat-hint>Email.</mat-hint>
-            <mat-error *ngIf="hasError('email', 'required')">Email is required.</mat-error>
-            <mat-error *ngIf="hasError('email', 'email')">Invalid email.</mat-error>
-          </mat-form-field>
-          <br>
-
-          <mat-form-field class="example-full-width">
-            <input type="text" placeholder="Prefered Method of Communication (How you want to be contacted)"
-              aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
-            <mat-autocomplete #auto="matAutocomplete">
-              <mat-option *ngFor="let option of options" [value]="option">
-                {{option}}
-              </mat-option>
-            </mat-autocomplete>
-            <mat-hint>How you would prefer to be contacted.</mat-hint>
-          </mat-form-field>
-          <br>
-
-          <a href="../assets/Privacy policy.docx" download>Download terms and conditions</a>
-          <div class="checkbox">
-            <h4 class="mat-h4"><input class="form-control" type="checkbox" value="">Accept Terms & Conditions.</h4>
+              </ngb-accordion>
+            </div>
           </div>
-          <br>
-
-          <button mat-raised-button class="angel-blue" [disabled]="!registrationFormGroup.valid"
-            (click)="onSubmit(registrationFormGroup.value)" class="btn btn-block">
-            Apply for debt solution
-          </button>
-          <div class="mt-4"></div>
-          <div class="mt-4"></div>
-          <br>
         </div>
       </div>
     </div>

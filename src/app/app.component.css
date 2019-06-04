@@ -24,7 +24,7 @@
 }
 
 html {
-    background: url(../assets/images/northfolk-1213051-unsplash.jpg) no-repeat center center fixed;
+    background: url(../assets/images/northfolk-1213051-unsplash.jpg) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -87,6 +87,7 @@ html {
     background-size: cover;
     background-clip: border-box;
     text-shadow: 3px 3px white; 
+    width: 40%;
 }
 
 #info-div2 {
