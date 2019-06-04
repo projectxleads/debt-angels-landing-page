@@ -13,8 +13,9 @@
         <div class="mt-4"></div>
         <mat-form-field appearance="outline">
           <mat-label>First Name</mat-label>
-          <input matInput placeholder="FirstName">
+          <input matInput placeholder="FirstName"  formControlName="lastName">
           <mat-hint>First name on your ID</mat-hint>
+          <mat-error *ngIf="hasError('lastName', 'required')">Last Name is required.</mat-error>
         </mat-form-field>
         <br>
 

@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
 
   panelOpenState = false;
   registrationFormGroup: FormGroup;
+  private myControl = new FormControl();
 
   private options: string[] = ['Call', 'SMS', 'WhatsApp', 'Email'];
   option: string = "Call";
@@ -18,7 +19,7 @@ export class AppComponent implements OnInit {
     this.registrationFormGroup = new FormGroup({
       email: new FormControl('', [Validators.required, Validators.email]),
       firstName: new FormControl('', [Validators.required, Validators.minLength(2), , Validators.maxLength(50)]),
-      middleName: new FormControl('', [Validators.required, Validators.minLength(2), , Validators.maxLength(50)]),
+      middleName: new FormControl('', [Validators.minLength(2), , Validators.maxLength(50)]),
       lastName: new FormControl('', [Validators.required, Validators.minLength(2), , Validators.maxLength(50)]),
       phoneNumber: new FormControl('', [Validators.required, Validators.minLength(10), Validators.maxLength(10),
               Validators.pattern(/^0(6|7|8){1}[0-9]{1}[0-9]{7}$/)]),
