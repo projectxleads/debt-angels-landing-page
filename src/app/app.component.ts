@@ -10,9 +10,9 @@ export class AppComponent implements OnInit {
 
   panelOpenState = false;
   registrationFormGroup: FormGroup;
-  private myControl = new FormControl();
+  myControl = new FormControl();
 
-  private options: string[] = ['Call', 'SMS', 'WhatsApp', 'Email'];
+  options: string[] = ['Call', 'SMS', 'WhatsApp', 'Email'];
   option: string = "Call";
 
   ngOnInit(): void {
@@ -31,6 +31,10 @@ export class AppComponent implements OnInit {
 
   public hasError = (controlName: string, errorName: string): boolean => {
     return this.registrationFormGroup.controls[controlName].hasError(errorName);
+  }
+
+  onSubmit(formValue) {
+
   }
 
 }
