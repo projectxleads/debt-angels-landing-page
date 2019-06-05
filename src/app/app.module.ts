@@ -8,12 +8,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule, RouteComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TabsComponent } from './components/tabs/tabs.component';
+import { DebtCounsellingComponent } from './components/debt-counselling/debt-counselling.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RouteComponents,
-    TabsComponent
+    TabsComponent,
+    DebtCounsellingComponent
   ],
   imports: [
     BrowserModule,
