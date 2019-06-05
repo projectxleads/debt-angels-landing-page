@@ -7,11 +7,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule, RouteComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TabsComponent } from './components/tabs/tabs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RouteComponents
+    RouteComponents,
+    TabsComponent
   ],
   imports: [
     BrowserModule,
