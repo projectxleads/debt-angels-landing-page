@@ -9,13 +9,15 @@ import { AppRoutingModule, RouteComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { DebtCounsellingComponent } from './components/debt-counselling/debt-counselling.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RouteComponents,
     TabsComponent,
-    DebtCounsellingComponent
+    DebtCounsellingComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
