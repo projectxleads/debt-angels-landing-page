@@ -13,6 +13,7 @@ import { DebtCounsellingComponent } from './components/debt-counselling/debt-cou
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { OurServicesComponent } from './components/our-services/our-services.component';
 import { OurProcessComponent } from './components/our-process/our-process.component';
+import { DebtReviewComponent } from './components/debt-review/debt-review.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { OurProcessComponent } from './components/our-process/our-process.compon
     DebtCounsellingComponent,
     CarouselComponent,
     OurServicesComponent,
-    OurProcessComponent
+    OurProcessComponent,
+    DebtReviewComponent
   ],
   imports: [
     BrowserModule,
