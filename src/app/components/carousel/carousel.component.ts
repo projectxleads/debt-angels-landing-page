@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./carousel.component.css']
 })
 export class CarouselComponent {
-  images = ["../assets/images/image7.jpg",
-   "../assets/images/northfolk-1213051-unsplash.jpg",
-    "../assets/images/reading.jpg",
+  images = ["../assets/images/blocks2.jpg",
+   "../assets/images/blocks3.jpg",
+    "../assets/images/blocks1.jpg",
     "../assets/images/image5.jpg"
   ];
 }
