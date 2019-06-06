@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { DebtCounsellingComponent } from './components/debt-counselling/debt-counselling.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { OurServicesComponent } from './components/our-services/our-services.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     RouteComponents,
     TabsComponent,
     DebtCounsellingComponent,
-    CarouselComponent
+    CarouselComponent,
+    OurServicesComponent
   ],
   imports: [
     BrowserModule,
