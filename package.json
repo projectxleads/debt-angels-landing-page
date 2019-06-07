@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "prestart": "npm rebuild node-sass",
     "start": "ng serve",
     "build": "ng build",
+    "postbuild": "npm rebuild node-sass",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
