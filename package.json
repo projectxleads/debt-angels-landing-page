@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "prestart": "npm install @angular/cli",
+    "prestart": "npm rebuild node-sass",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
