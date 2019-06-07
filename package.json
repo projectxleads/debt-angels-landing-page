@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build && npm rebuild node-sass",
+    "build": "ng build",
+    "postbuild": "npm rebuild node-sass --force",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
