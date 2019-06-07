@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "prestart": "npm install @angular/cli",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
@@ -21,6 +22,7 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
+    "@angular/cli": "~7.3.6",
     "@fortawesome/fontawesome-free": "^5.9.0",
     "@ng-bootstrap/ng-bootstrap": "^4.2.1",
     "@types/chart.js": "^2.7.53",
