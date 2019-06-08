@@ -4,7 +4,6 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "postinstall": "npm rebuild node-sass --force",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
