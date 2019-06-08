@@ -14,6 +14,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { OurServicesComponent } from './components/our-services/our-services.component';
 import { OurProcessComponent } from './components/our-process/our-process.component';
 import { DebtReviewComponent } from './components/debt-review/debt-review.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DebtReviewComponent } from './components/debt-review/debt-review.compon
     CarouselComponent,
     OurServicesComponent,
     OurProcessComponent,
-    DebtReviewComponent
+    DebtReviewComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
