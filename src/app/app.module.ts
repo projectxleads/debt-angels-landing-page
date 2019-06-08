@@ -15,6 +15,7 @@ import { OurServicesComponent } from './components/our-services/our-services.com
 import { OurProcessComponent } from './components/our-process/our-process.component';
 import { DebtReviewComponent } from './components/debt-review/debt-review.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
     OurServicesComponent,
     OurProcessComponent,
     DebtReviewComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
