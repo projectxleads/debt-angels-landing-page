@@ -1,0 +1,35 @@
+.welcome-container {
+  height: unset !important;
+}
+.view {
+  height: 100vh !important;
+  // background: no-repeat center center fixed; 
+  // background-image: url(https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg);
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+}
+
+.list-group-item {
+  background-color: transparent;
+}
+
+h1 {
+  letter-spacing: 8px;
+}
+h5 {
+  letter-spacing: 3px;
+}
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+@media (max-width: 740px) {
+  .full-height,
+  .full-height body,
+  .full-height header,
+  .full-height header .view {
+    height: 700px;
+  }
+}
