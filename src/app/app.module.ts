@@ -19,6 +19,7 @@ import { DebtReviewComponent } from './components/debt-review/debt-review.compon
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { QuestionaireComponent } from './components/questionaire/questionaire.component';
+import { WelcomeBackgroundVideoCarouselComponent } from './components/welcome/welcome-background-video-carousel/welcome-background-video-carousel';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { QuestionaireComponent } from './components/questionaire/questionaire.co
     DebtReviewComponent,
     WelcomeComponent,
     NotFoundComponent,
-    QuestionaireComponent
+    QuestionaireComponent,
+    WelcomeBackgroundVideoCarouselComponent
   ],
   imports: [
     BrowserModule,
