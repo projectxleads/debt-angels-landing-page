@@ -1,14 +1,15 @@
 .welcome-container {
   height: unset !important;
 }
-.view {
-  height: 100vh !important;
-  // background: no-repeat center center fixed; 
-  // background-image: url(https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg);
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
+
+.background-image {
+  
+  background: no-repeat center center fixed; 
+  background-image: url(https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .list-group-item {

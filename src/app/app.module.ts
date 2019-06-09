@@ -20,6 +20,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { QuestionaireComponent } from './components/questionaire/questionaire.component';
 import { WelcomeBackgroundVideoCarouselComponent } from './components/welcome/welcome-background-video-carousel/welcome-background-video-carousel';
+import { WelcomeSignUpAdvantageComponent } from './components/welcome/welcome-sign-up-advantage/welcome-sign-up-advantage.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { WelcomeBackgroundVideoCarouselComponent } from './components/welcome/we
     WelcomeComponent,
     NotFoundComponent,
     QuestionaireComponent,
-    WelcomeBackgroundVideoCarouselComponent
+    WelcomeBackgroundVideoCarouselComponent,
+    WelcomeSignUpAdvantageComponent
   ],
   imports: [
     BrowserModule,
