@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class QuestionaireComponent implements OnInit {
   cards = [
     {
-      title: 'Card Title 1',
+      title: '1. Are you over indebted? Struggling to pay off your loans and meeting your monthly obligations?',
       description: 'Some quick example text to build on the card title and make up the bulk of the card content',
       buttonText: 'Button',
       img: 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg'
