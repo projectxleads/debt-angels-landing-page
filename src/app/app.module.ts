@@ -46,6 +46,7 @@ import { QuestionaireComponent } from './components/questionaire/questionaire.co
     MdbDemosModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [QuestionaireComponent]
 })
 export class AppModule { }
