@@ -22,6 +22,7 @@ import { QuestionaireComponent } from './components/questionaire/questionaire.co
 import { WelcomeBackgroundVideoCarouselComponent } from './components/welcome/welcome-background-video-carousel/welcome-background-video-carousel';
 import { WelcomeSignUpAdvantageComponent } from './components/welcome/welcome-sign-up-advantage/welcome-sign-up-advantage.component';
 import { WelcomeOurServicesComponent } from './components/welcome/welcome-our-services/welcome-our-services.component';
+import { WelcomeOurProcessComponent } from './components/welcome/welcome-our-process/welcome-our-process.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { WelcomeOurServicesComponent } from './components/welcome/welcome-our-se
     QuestionaireComponent,
     WelcomeBackgroundVideoCarouselComponent,
     WelcomeSignUpAdvantageComponent,
-    WelcomeOurServicesComponent
+    WelcomeOurServicesComponent,
+    WelcomeOurProcessComponent
   ],
   imports: [
     BrowserModule,

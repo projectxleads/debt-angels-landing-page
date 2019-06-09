@@ -2,6 +2,11 @@
   height: unset !important;
 }
 
+.float-header {
+  position: fixed;
+  z-index: 1;
+}
+
 .float{
 	position:fixed;
 	bottom:40px;
@@ -16,7 +21,7 @@
 .background-image {
   
   background: no-repeat center center fixed; 
-  background-image: url(https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg);
+  background-image: url(https://static1.squarespace.com/static/59a4f55f2994caf642815e9c/t/59aa3beac534a5dcf20cdda3/1504328697036/work.jpeg?format=750w);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
