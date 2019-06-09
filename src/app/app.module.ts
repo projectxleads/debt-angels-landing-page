@@ -6,6 +6,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
+import { MdbDemosModule } from './mdb-demos/mdb-demos.module';
+
 import { AppRoutingModule, RouteComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TabsComponent } from './components/tabs/tabs.component';
@@ -40,7 +42,8 @@ import { QuestionaireComponent } from './components/questionaire/questionaire.co
     ReactiveFormsModule,
     FormsModule,
     NgbModule,
-    MDBBootstrapModule
+    MDBBootstrapModule,
+    MdbDemosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
