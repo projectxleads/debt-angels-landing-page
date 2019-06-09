@@ -2,6 +2,17 @@
   height: unset !important;
 }
 
+.float{
+	position:fixed;
+	bottom:40px;
+	right:40px;
+	background-color:#0C9;
+	color:#FFF;
+	text-align:center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1;
+}
+
 .background-image {
   
   background: no-repeat center center fixed; 
