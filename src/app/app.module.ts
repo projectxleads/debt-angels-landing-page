@@ -24,6 +24,7 @@ import { WelcomeSignUpAdvantageComponent } from './components/welcome/welcome-si
 import { WelcomeOurServicesComponent } from './components/welcome/welcome-our-services/welcome-our-services.component';
 import { WelcomeOurProcessComponent } from './components/welcome/welcome-our-process/welcome-our-process.component';
 import { WelcomeMdbProjectOurServicesComponent } from './components/welcome/welcome-mdb-project-our-services/welcome-mdb-project-our-services';
+import { WelcomeBlogOurProcessComponent } from './components/welcome/welcome-blog-our-process/welcome-blog-our-process';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { WelcomeMdbProjectOurServicesComponent } from './components/welcome/welc
     WelcomeSignUpAdvantageComponent,
     WelcomeOurServicesComponent,
     WelcomeOurProcessComponent,
-    WelcomeMdbProjectOurServicesComponent
+    WelcomeMdbProjectOurServicesComponent,
+    WelcomeBlogOurProcessComponent
   ],
   imports: [
     BrowserModule,
