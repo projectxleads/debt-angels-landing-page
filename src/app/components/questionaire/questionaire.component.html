@@ -1,22 +1,240 @@
-<div class="view" data-jarallax='{"speed": 0.2}'>
-  <div class="container d-flex justify-content-start flex-center">
-    <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'"
-      [animation]="'slide'">
-      <mdb-carousel-item *ngFor="let item of slides; let i = index">
-        <div class="col-md-4" [ngClass]="{'d-none d-md-block': cardIndex !== 0}"
-          *ngFor="let card of item; let cardIndex = index">
-          <mdb-card class="my-1">
-            <mdb-card-img [src]="card.img" alt="Card image cap"></mdb-card-img>
-            <mdb-card-body>
-              <mdb-card-title>
-                <h4>{{card.title}}</h4>
-              </mdb-card-title>
-              <p>{{card.description}}</p>
-              <a href="#" mdbBtn color="primary" class="waves-light" mdbWavesEffect>{{card.buttonText}}</a>
-            </mdb-card-body>
-          </mdb-card>
-        </div>
-      </mdb-carousel-item>
-    </mdb-carousel>
+<div class="container-fluid mb-3">
+  <h2 class="h1-responsive font-weight-bold text-center my-5">What is Debt Counselling?</h2>
+  <p class="text-center w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in voluptate velit
+    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+    qui officia deserunt mollit anim id est laborum.</p>
+  <div class="row">
+    <div class="col-lg-5">
+      <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4 waves-light" mdbWavesEffect>
+        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(27).jpg" alt="Sample image">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+    </div>
+    <div class="col-lg-7">
+      <a href="#!" class="green-text">
+        <h6 class="font-weight-bold mb-3"><i class="fas fa-utensils pr-2"></i>Food</h6>
+      </a>
+      <h3 class="font-weight-bold mb-3"><strong>1. Are you over indebted? Struggling to pay off your loans and meeting your monthly obligations?</strong></h3>
+      <p>Debt counselling is one of the debt relief measures available in South Africa, introduced by the
+        National Credit Act (NCA) in 2007. Debt counselling is intended to assist over-indebted consumers
+        struggling with debt through budget advice, negotiation with credit providers for reduced payments
+        and
+        restructuring of debts.
+        This is a great process for anyone with an income and struggling to meet their monthly obligations.</p>
+      <a mdbBtn color="success" mdbWavesEffect>Read more</a>
+    </div>
+  </div>
+  <hr class="my-5">
+  <div class="row">
+    <div class="col-lg-7">
+      <a href="#!" class="pink-text">
+        <h6 class="font-weight-bold mb-3"><i class="far fa-image pr-2"></i>Lifestyle</h6>
+      </a>
+      <h3 class="font-weight-bold mb-3"><strong>2. What is over-indebtedness?</strong></h3>
+      <p>Over-indebtedness occurs when a consumer is unable to repay all financial obligations in a timely
+        manner
+        and/or where total debt repayments exceed net income (“take-home pay”) after living expenses have
+        been
+        paid for.</p>
+      <a mdbBtn color="pink" mdbWavesEffect class="mb-lg-0 mb-4">Read more</a>
+    </div>
+    <div class="col-lg-5">
+      <div class="view overlay rounded z-depth-2 waves-light" mdbWavesEffect>
+        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(34).jpg" alt="Sample image">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <hr class="my-5">
+  <div class="row">
+    <div class="col-lg-5">
+      <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4 waves-light" mdbWavesEffect>
+        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img (28).jpg" alt="Sample image">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-7">
+      <a href="#!" class="indigo-text">
+        <h6 class="font-weight-bold mb-3"><i class="fas fa-suitcase pr-2"></i>Travels</h6>
+      </a>
+      <h3 class="font-weight-bold mb-3"><strong>3. How does Debt counselling work?</strong></h3>
+      <p>Once declared over indebted and accepted into debt counselling the following will happen:
+        You will be protected from legal action for a period of 60 days from the day of application and
+        after
+        the arrangement has been concluded, as long as you pay according to the new arrangement;
+        All your creditors will have to stop calling you and will liaise with your debt counsellor;
+        You will be listed with the Credit Bureau as being under debt counselling.</p>
+      <a mdbBtn color="indigo" mdbWavesEffect>Read more</a>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-lg-7">
+      <a href="#!" class="pink-text">
+        <h6 class="font-weight-bold mb-3"><i class="far fa-image pr-2"></i>Lifestyle</h6>
+      </a>
+      <h3 class="font-weight-bold mb-3"><strong>4. How can Debt counselling help you become debt free?</strong></h3>
+      <p>Once declared over indebted and accepted into debt counselling the following will happen:
+        You will be protected from legal action for a period of 60 days from the day of application and
+        after
+        the arrangement has been concluded, as long as you pay according to the new arrangement;
+        All your creditors will have to stop calling you and will liaise with your debt counsellor;
+        You will be listed with the Credit Bureau as being under debt counselling.</p>
+      <a mdbBtn color="pink" mdbWavesEffect class="mb-lg-0 mb-4">Read more</a>
+    </div>
+    <div class="col-lg-5">
+      <div class="view overlay rounded z-depth-2 waves-light" mdbWavesEffect>
+        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(34).jpg" alt="Sample image">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <hr class="my-5">
+  <div class="row">
+    <div class="col-lg-5">
+      <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4 waves-light" mdbWavesEffect>
+        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img (28).jpg" alt="Sample image">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-7">
+      <a href="#!" class="indigo-text">
+        <h6 class="font-weight-bold mb-3"><i class="fas fa-suitcase pr-2"></i>Travels</h6>
+      </a>
+      <h3 class="font-weight-bold mb-3"><strong>5. How can Debt counselling help you become debt free?</strong></h3>
+      <p>While you are under debt counselling you will not be allowed to get any further credit until you are
+        issued with a Clearance Certificate- once you have satisfied your obligations as per the Court or
+        Tribunal order and in line with the National Credit Act.</p>
+      <a mdbBtn color="indigo" mdbWavesEffect>Read more</a>
+    </div>
+  </div>
+  <hr class="my-5">
+  <div class="row">
+    <div class="col-lg-7">
+      <a href="#!" class="pink-text">
+        <h6 class="font-weight-bold mb-3"><i class="far fa-image pr-2"></i>Lifestyle</h6>
+      </a>
+      <h3 class="font-weight-bold mb-3"><strong>6. Who is in charge of debt counselling in South Africa?</strong></h3>
+      <p>Debt counselling is governed by the National Credit Act and is overseen by the National Credit
+        Regulator
+        (NCR)</p>
+      <a mdbBtn color="pink" mdbWavesEffect class="mb-lg-0 mb-4">Read more</a>
+    </div>
+    <div class="col-lg-5">
+      <div class="view overlay rounded z-depth-2 waves-light" mdbWavesEffect>
+        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(34).jpg" alt="Sample image">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <hr class="my-5">
+  <div class="row">
+    <div class="col-lg-5">
+      <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4 waves-light" mdbWavesEffect>
+        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img (28).jpg" alt="Sample image">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-7">
+      <a href="#!" class="indigo-text">
+        <h6 class="font-weight-bold mb-3"><i class="fas fa-suitcase pr-2"></i>Travels</h6>
+      </a>
+      <h3 class="font-weight-bold mb-3"><strong>7. Who offers debt counselling in South Africa?</strong></h3>
+      <p>There are multiple companies or people that are registered as Debt counsellors in terms of the
+        National
+        Credit Act.</p>
+      <a mdbBtn color="indigo" mdbWavesEffect>Read more</a>
+    </div>
+  </div>
+  <hr class="my-5">
+  <div class="row">
+    <div class="col-lg-7">
+      <a href="#!" class="pink-text">
+        <h6 class="font-weight-bold mb-3"><i class="far fa-image pr-2"></i>Lifestyle</h6>
+      </a>
+      <h3 class="font-weight-bold mb-3"><strong>8. Where and how should the money be paid?</strong></h3>
+      <p>You would arrange that your first and second payment to be taken by your debt counsellor, by means
+        of a
+        debit order.</p>
+      <a mdbBtn color="pink" mdbWavesEffect class="mb-lg-0 mb-4">Read more</a>
+    </div>
+    <div class="col-lg-5">
+      <div class="view overlay rounded z-depth-2 waves-light" mdbWavesEffect>
+        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(34).jpg" alt="Sample image">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <hr class="my-5">
+  <div class="row">
+    <div class="col-lg-5">
+      <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4 waves-light" mdbWavesEffect>
+        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img (28).jpg" alt="Sample image">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-7">
+      <a href="#!" class="indigo-text">
+        <h6 class="font-weight-bold mb-3"><i class="fas fa-suitcase pr-2"></i>Travels</h6>
+      </a>
+      <h3 class="font-weight-bold mb-3"><strong>9. Who is responsible for payment distributions to credit providers?</strong></h3>
+      <p>Once accepted under debt counselling you will pay one instalment which will then be distributed to
+        your
+        credit providers by a Payment Distribution Agent (PDA). The PDA is also responsible for the
+        provision of
+        monthly statements to consumers and payment schedules to debt counsellors, employers and credit
+        providers, as well as attending to queries from the respective parties.</p>
+      <a mdbBtn color="indigo" mdbWavesEffect>Read more</a>
+    </div>
+  </div>
+  <hr class="my-5">
+  <div class="row">
+    <div class="col-lg-7">
+      <a href="#!" class="pink-text">
+        <h6 class="font-weight-bold mb-3"><i class="far fa-image pr-2"></i>Lifestyle</h6>
+      </a>
+      <h3 class="font-weight-bold mb-3"><strong>10. How can Debt counselling help you become debt free?</strong></h3>
+      <p>Our Debt Review Advice Will Put You Back in Control of Your Finances.
+        We provide tailor-made Debt Review Services across South Africa and can help you save money every
+        month
+        and protect your assets from being repossessed.
+        Through poor financial decision-making or even via no fault of their own, most consumers have lived
+        through the predicament of running out of money before month end, skipping debt repayments to credit
+        providers as a result.
+        The Debt Review Process prevents credit providers from taking legal action against you in order to
+        reclaim the outstanding balance. With our Debt Review Help, you will avoid setting off a grim
+        sequence
+        of ramifications.</p>
+      <a mdbBtn color="pink" mdbWavesEffect class="mb-lg-0 mb-4">Read more</a>
+    </div>
+    <div class="col-lg-5">
+      <div class="view overlay rounded z-depth-2 waves-light" mdbWavesEffect>
+        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(34).jpg" alt="Sample image">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    </div>
   </div>
 </div>

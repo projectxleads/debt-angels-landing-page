@@ -23,6 +23,7 @@ import { WelcomeBackgroundVideoCarouselComponent } from './components/welcome/we
 import { WelcomeSignUpAdvantageComponent } from './components/welcome/welcome-sign-up-advantage/welcome-sign-up-advantage.component';
 import { WelcomeOurServicesComponent } from './components/welcome/welcome-our-services/welcome-our-services.component';
 import { WelcomeOurProcessComponent } from './components/welcome/welcome-our-process/welcome-our-process.component';
+import { WelcomeMdbProjectOurServicesComponent } from './components/welcome/welcome-mdb-project-our-services/welcome-mdb-project-our-services';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { WelcomeOurProcessComponent } from './components/welcome/welcome-our-pro
     WelcomeBackgroundVideoCarouselComponent,
     WelcomeSignUpAdvantageComponent,
     WelcomeOurServicesComponent,
-    WelcomeOurProcessComponent
+    WelcomeOurProcessComponent,
+    WelcomeMdbProjectOurServicesComponent
   ],
   imports: [
     BrowserModule,
