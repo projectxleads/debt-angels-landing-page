@@ -5,7 +5,7 @@
     "ng": "ng",
     "prestart": "npm i",
     "start": "ng serve",
-    "build": "ng run build:dev && ng build --prod",
+    "build": "npm run build:dev && ng build --prod",
     "build:dev": "ng build",
     "test": "ng test",
     "lint": "ng lint",
