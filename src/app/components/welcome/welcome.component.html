@@ -1,8 +1,11 @@
 <div class="welcome-container">
   <div class="d-flex justify-content-center">
-    <h1 class="float-header mt-3">Debt Angels</h1>
+    <div class="header float-header">
+      <h1 class="mt-3">Debt Angels</h1>
+    </div>
   </div>
-  <button [routerLink]="['/home']" class="float animated tada infinite" mdbBtn type="button" size="lg" gradient="purple" mdbWavesEffect>
+  <button [routerLink]="['/home']" class="float animated tada infinite" mdbBtn type="button" size="lg" gradient="purple"
+    mdbWavesEffect>
     <mdb-icon fas icon="hand-holding-usd" class="mr-3"></mdb-icon>Get Me Out Of Debt
   </button>
   <app-welcome-background-video-carousel></app-welcome-background-video-carousel>

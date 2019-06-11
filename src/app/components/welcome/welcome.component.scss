@@ -7,6 +7,14 @@
   z-index: 1;
 }
 
+.header {
+  border-radius: 10px;
+  border: 1px solid grey;
+  background-color: white;
+  z-index: 200;
+  padding: 0px 10px;
+}
+
 .float{
 	position:fixed;
 	bottom:40px;
