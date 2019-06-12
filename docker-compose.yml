@@ -1,10 +1,14 @@
-version: '2.1'
+version: '3.7'
 
 services:
+
   debtangel:
-    image: debtangel
-    build: .
-    environment:
-      NODE_ENV: production
+    container_name: debtangel
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
     ports:
-      - 3000:3000
+      - '4201:4200'
