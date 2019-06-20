@@ -1,6 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from "@angular/router";
 
 import { LeadService } from "../services/lead.service";
 import { Lead } from '../shared/models/lead.model';
@@ -12,7 +13,8 @@ import { Lead } from '../shared/models/lead.model';
 })
 export class HomeComponent implements OnInit {
   constructor(
-    private leadService: LeadService
+    private leadService: LeadService,
+    private router: Router
     ) { }
 
   panelOpenState = false;
@@ -40,20 +42,21 @@ export class HomeComponent implements OnInit {
     return this.registrationFormGroup.controls[controlName].hasError(errorName);
   }
 
-  onSubmit(form: FormGroup) {
-    console.log(form);
+  onSubmit(form) {
+    console.log();
     if(form.valid) {
       const lead = form.value as Lead;
       console.log("Lead:", lead);
       
-      // this.leadService.addLead(lead).subscribe(result => {
-      //   console.log("Succesfully added!", result);
-      // }, err => {
-      //   console.log("Failed to add lead:", err);
-      // }, () => {
-      //   console.log("Completed adding lead");
-      // });
-      form.reset;
+      this.leadService.addLead(lead).subscribe(result => {
+        console.log("Succesfully added!", result);
+      }, err => {
+        console.log("Failed to add lead:", err);
+      }, () => {
+        console.log("Completed adding lead");
+        form.resetForm();
+        this.router.navigate(['/welcome']);
+      });
     } else {
       console.log("Form not valid");
     }
