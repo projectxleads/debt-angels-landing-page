@@ -93,12 +93,10 @@
           </div>
           <br>
 
-          <button mat-raised-button class="angel-blue" [disabled]="!registrationFormGroup.valid"
+          <button mat-raised-button class="angel-blue" [disabled]="!registrationFormGroup.valid || isLoading"
             class="btn btn-block" type="submit">
-            Apply for debt solution
+            <span *ngIf="isLoading" class="spinner-grow spinner-grow-sm mr-2" role="status" aria-hidden="true"></span>Apply for debt solution
           </button>
-          <div class="mt-4"></div>
-          <div class="mt-4"></div>
           <br>
         </form>
       </div>

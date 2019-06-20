@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
   panelOpenState = false;
   registrationFormGroup: FormGroup;
   myControl = new FormControl();
+  isLoading = false;
 
   options: string[] = ['Call', 'SMS', 'WhatsApp', 'Email'];
   option: string = "Call";
@@ -48,14 +49,15 @@ export class HomeComponent implements OnInit {
       const lead = form.value as Lead;
       console.log("Lead:", lead);
       
+      this.isLoading = true;
       this.leadService.addLead(lead).subscribe(result => {
         console.log("Succesfully added!", result);
+        form.resetForm();
+        this.isLoading = false;
+        this.router.navigate(['/welcome']);
       }, err => {
         console.log("Failed to add lead:", err);
-      }, () => {
-        console.log("Completed adding lead");
-        form.resetForm();
-        this.router.navigate(['/welcome']);
+        this.isLoading = false;
       });
     } else {
       console.log("Form not valid");
