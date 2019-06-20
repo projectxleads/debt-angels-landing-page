@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-
+import { HttpClientModule } from "@angular/common/http";
 import { MdbDemosModule } from './mdb-demos/mdb-demos.module';
 
 import { AppRoutingModule, RouteComponents } from './app-routing.module';
@@ -57,7 +57,8 @@ import { WelcomeDebtReviewComponent } from './components/welcome/welcome-debt-re
     FormsModule,
     NgbModule,
     MDBBootstrapModule,
-    MdbDemosModule
+    MdbDemosModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
