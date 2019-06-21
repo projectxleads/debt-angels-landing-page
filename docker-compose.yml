@@ -3,7 +3,7 @@ version: '3.7'
 services:
 
   debtangel:
-    container_name: debtangel
+    image: mickeymuis007/debt-angels
     build:
       context: .
       dockerfile: Dockerfile

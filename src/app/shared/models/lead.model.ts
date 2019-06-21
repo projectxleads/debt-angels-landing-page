@@ -6,5 +6,5 @@ export interface Lead {
   email: string;
   alternativePhoneNumber: string;
   communication: string;  
-  termsAndConditions: boolean;
+  termsAndCondition: boolean;
 }

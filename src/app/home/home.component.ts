@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
       alternativePhoneNumber: new FormControl('', [Validators.minLength(10), Validators.maxLength(10),
               Validators.pattern(/^0(6|7|8){1}[0-9]{1}[0-9]{7}$/)]),
       methodOfCommunication: new FormControl('', []),
-      termsAndConditions: new FormControl('', [Validators.pattern("true"), Validators.required])
+      termsAndCondition: new FormControl('', [Validators.pattern("true"), Validators.required])
     });
   }
 
