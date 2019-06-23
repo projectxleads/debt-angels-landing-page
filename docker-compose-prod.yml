@@ -4,8 +4,9 @@ services:
 
   debtangel-prod:
     image: mickeymuis007/debt-angels
+    container_name: debtangel-prod
     build:
       context: .
       dockerfile: Dockerfile-prod
     ports:
-      - '80:80'
+      - '80:4200'

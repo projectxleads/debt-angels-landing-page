@@ -3,7 +3,8 @@ version: '3.7'
 services:
 
   debtangel:
-    image: mickeymuis007/debt-angels
+    image: mickeymuis007/debt-angels:1.0.2
+    container_name: debtangel
     build:
       context: .
       dockerfile: Dockerfile
@@ -12,3 +13,4 @@ services:
       - '/app/node_modules'
     ports:
       - '4201:4200'
+      - '4202:4200'
