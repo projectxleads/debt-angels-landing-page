@@ -3,7 +3,7 @@ version: '3.7'
 services:
 
   debtangel:
-    image: mickeymuis007/debt-angels:1.0.2
+    image: mickeymuis007/debt-angels:1.0.3(dev)
     container_name: debtangel
     build:
       context: .
