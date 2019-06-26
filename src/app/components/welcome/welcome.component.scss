@@ -27,14 +27,9 @@
 }
 
 .background-image {
-  
-  // background: no-repeat center center fixed; 
-  // background-image: url(https://static1.squarespace.com/static/59a4f55f2994caf642815e9c/t/59aa3beac534a5dcf20cdda3/1504328697036/work.jpeg?format=750w);
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
-  background-color: white;
+  background: url("../../../assets/images/BAckground_theme3.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 160px;
 }
 
 .list-group-item {
@@ -55,7 +50,7 @@ h5 {
   .full-height,
   .full-height body,
   .full-height header,
-  .full-height header .view {
+  .full-height header {
     height: 700px;
   }
 }
@@ -82,7 +77,7 @@ External testing on floating bar welcome page
 
 .stage {
   // height: 300px;
-  width: 500px;
+  // width: 500px;
   margin: auto;
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
@@ -101,10 +96,10 @@ External testing on floating bar welcome page
 }
 
 .layer:after {
-  font: 70px/0.65 'Pacifico', 'Kaushan Script', Futura, 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
+  font: 90px/0.65 'Pacifico', 'Kaushan Script', Futura, 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
   content: 'Debt\A    Angels!';
   white-space: pre;
-  text-align: right;
+  text-align: center;
   height: 100%;
   width: 100%;
   position: absolute;
