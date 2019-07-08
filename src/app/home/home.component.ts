@@ -37,6 +37,9 @@ export class HomeComponent implements OnInit {
       methodOfCommunication: new FormControl('', []),
       termsAndCondition: new FormControl('', [Validators.pattern("true"), Validators.required])
     });
+
+    const advert = document.getElementById("advert-display");
+    advert.classList.remove("advert-display");
   }
 
   public hasError = (controlName: string, errorName: string): boolean => {

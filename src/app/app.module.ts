@@ -26,6 +26,7 @@ import { WelcomeOurProcessComponent } from './components/welcome/welcome-our-pro
 import { WelcomeMdbProjectOurServicesComponent } from './components/welcome/welcome-mdb-project-our-services/welcome-mdb-project-our-services';
 import { WelcomeBlogOurProcessComponent } from './components/welcome/welcome-blog-our-process/welcome-blog-our-process';
 import { WelcomeDebtReviewComponent } from './components/welcome/welcome-debt-review/welcome-debt-review.component';
+import { AdvertComponent } from './components/advert/advert.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { WelcomeDebtReviewComponent } from './components/welcome/welcome-debt-re
     WelcomeOurProcessComponent,
     WelcomeMdbProjectOurServicesComponent,
     WelcomeBlogOurProcessComponent,
-    WelcomeDebtReviewComponent
+    WelcomeDebtReviewComponent,
+    AdvertComponent
   ],
   imports: [
     BrowserModule,

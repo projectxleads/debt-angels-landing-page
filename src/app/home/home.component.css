@@ -88,4 +88,6 @@
     margin-bottom:20px;
   }
   
-  
+.advert-display {
+    display: block !important;
+}  
